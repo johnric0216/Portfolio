@@ -181,43 +181,59 @@ section{
 .about-box h2{
     font-size: 2.5em;
 }
-#services{
+#services {
     background-color: var(--background);
+    padding: 5% 5%; 
+    width: 100%;
 }
-.header{
+
+.header {
     text-align: center;
-    font-size: 5em;
-    margin: 0.5em 0;
+    font-size: 4em;
+    margin-bottom: 1.5em;
 }
-.services-container{
+
+.services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    gap: 2em;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2em; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
-.box{
+
+.box {
     border: 3px solid rgb(49,49,49);
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; 
     overflow: hidden;
-    object-fit: cover;
-    padding: 3em;
-    gap: 2em;
+    padding: 2.5em 2em; 
+    gap: 1.5em;
     color: white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    background-color: var(--second-background);
 }
-.box-hover{
+
+.box:hover {
     border: 3px solid rgb(100,100,100);
 }
-.box p{
-    opacity: 0.8;
-}
-.box h1{
+
+.box h1 {
     font-size: 2em;
 }
-.box img{
-    min-width: 25px;
+
+.box p {
+    opacity: 0.8;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.box img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 0.5em;
+    margin-top: auto; 
 }
