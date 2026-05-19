@@ -202,6 +202,13 @@ section{
     max-width: 1200px; 
     margin: 0 auto; 
 }
+.services-container .box a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 
 .box {
     border: 3px solid rgb(49,49,49);
@@ -330,7 +337,7 @@ footer{
 } 
 
 .col-right span{
-    font-size: 3em;
+    font-size: 2em;
 }
 .col-right .social-icons{
     display: flex;
